@@ -1,0 +1,12 @@
+name: Actions startup diagnostic
+on:
+  push:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+    steps:
+      - run: echo "Public echo-only startup diagnostic; no code checkout or secrets"
