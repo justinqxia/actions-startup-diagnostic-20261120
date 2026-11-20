@@ -6,7 +6,7 @@ permissions:
   contents: read
 jobs:
   echo:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, railway]
     timeout-minutes: 1
     steps:
       - run: echo "Public echo-only startup diagnostic; no code checkout or secrets"
